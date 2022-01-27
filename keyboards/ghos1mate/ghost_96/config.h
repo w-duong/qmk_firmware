@@ -12,6 +12,12 @@
 #define MANUFACTURER "Ghos1mate"
 #define PRODUCT      "Ghost_96"
 
+/* Rotary Encoder momentary pins */
+#define ENCODERS_PAD_A { F0 }
+#define ENCODERS_PAD_B { F1 }
+
+#define ENCODER_RESOLUTION 2
+
 /* key matrix size */
 #define MATRIX_ROWS 9
 #define MATRIX_COLS 11

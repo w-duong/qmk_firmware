@@ -48,3 +48,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, _______, _______, _______, _______, _______, _______, _______                    // row8
     )
 };
+
+bool encoder_update_user(uint8_t index, bool clockwise)
+{
+    if (index == 0)
+    {
+        if (clockwise)
+        {
+            tap_code_delay(KC_VOLU, 4);
+        }
+        else
+        {
+            tap_code_delay(KC_VOLD, 4);
+        }
+    }
+    return false;
+}
